@@ -1,0 +1,68 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="accord">
+      <h2 data-cy="accordDetailsHeading"><span jhiTranslate="accordApp.accord.detail.title">Accord</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ accord.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.partenaire">Partenaire</span></dt>
+        <dd>
+          <span>{{ accord.partenaire }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.domaine">Domaine</span></dt>
+        <dd>
+          <span>{{ accord.domaine }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.description">Description</span></dt>
+        <dd>
+          <span>{{ accord.description }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.date">Date</span></dt>
+        <dd>
+          <span>{{ accord.date | formatMediumDatetime }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.dure">Dure</span></dt>
+        <dd>
+          <span>{{ accord.dure }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.zone">Zone</span></dt>
+        <dd>
+          <span>{{ accord.zone }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.type">Type</span></dt>
+        <dd>
+          <span>{{ accord.type }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.nature">Nature</span></dt>
+        <dd>
+          <span>{{ accord.nature }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.validationDircoop">Validation Dircoop</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'accordApp.ValidationDC.' + accord.validationDircoop }}">{{ accord.validationDircoop }}</span>
+        </dd>
+        <dt><span jhiTranslate="accordApp.accord.validationRecteur">Validation Recteur</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'accordApp.ValidationR.' + accord.validationRecteur }}">{{ accord.validationRecteur }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/accord', accord.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
