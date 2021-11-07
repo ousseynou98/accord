@@ -1,0 +1,20 @@
+entity Accord {
+	Partenaire String,
+    Domaine String,
+    Description String,
+    Date Instant,
+    Dure String,
+    Zone String,
+    Type String,
+    Nature String,
+    ValidationDircoop ValidationDC,
+    ValidationRecteur ValidationR
+}
+
+enum ValidationDC {
+    VALIDE, INVALIDE, TRAITEMENT
+}
+
+enum ValidationR {
+    VALIDE, INVALIDE, TRAITEMENT
+}
