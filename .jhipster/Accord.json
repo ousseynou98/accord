@@ -1,0 +1,58 @@
+{
+  "name": "Accord",
+  "fields": [
+    {
+      "fieldName": "partenaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "domaine",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dure",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nature",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "validationDircoop",
+      "fieldType": "ValidationDC",
+      "fieldValues": "VALIDE,INVALIDE,TRAITEMENT"
+    },
+    {
+      "fieldName": "validationRecteur",
+      "fieldType": "ValidationR",
+      "fieldValues": "VALIDE,INVALIDE,TRAITEMENT"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "accord",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211107195746"
+}

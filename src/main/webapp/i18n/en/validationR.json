@@ -1,0 +1,10 @@
+{
+  "accordApp": {
+    "ValidationR": {
+      "null": "",
+      "VALIDE": "VALIDE",
+      "INVALIDE": "INVALIDE",
+      "TRAITEMENT": "TRAITEMENT"
+    }
+  }
+}
